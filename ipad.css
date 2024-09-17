@@ -1,0 +1,22 @@
+body{background:#353535;
+  color: #fff;
+}
+h1{display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  font-size: 60px;
+  
+}
+.card{margin: 30px;
+  background: #464646;
+  color: #fff;
+ transition: all .8s;
+}
+#content a{display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+#content{display: flex;
+  flex-wrap: wrap ;
+}
+.card:hover{transform: scale(1.1)}

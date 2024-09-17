@@ -1,0 +1,9 @@
+body{background: #464748;}
+.accordion-item{margin: 60px}
+h1{color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 4rem;
+  text-transform: uppercase ;
+}

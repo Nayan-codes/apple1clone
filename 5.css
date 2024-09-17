@@ -1,0 +1,144 @@
+body{background:#353535;
+  color: #fff;
+  
+}
+h1{display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  font-size: 60px;
+  
+}
+.card{margin: 30px;
+  background: #464646;
+  color: #fff;
+ transition: all .8s;
+}
+#content a{display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+.card:hover{transform: scale(1.1)}
+#content{display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 18rem; /* Fixed width for all cards */
+  height: 30rem; /* Fixed height for all cards */
+  margin: 30px;
+  background: #464646;
+  color: #fff;
+  transition: all 0.8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the card text */
+.card-text {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Style for the card image to fit the card size */
+.card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover; /* Ensures the image covers the space nicely */
+}
+
+/* Style for the card body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Style for the buttons inside cards */
+.card-body button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #252525;
+  background-color: #fff;
+  border-image: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-body button:hover {
+  background-color: #ddd;
+  transform: translateY(-3px);
+}
+
+/* Hover effect for the cards */
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Style for the content container */
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Anchor tag wrapping each card */
+#content a {
+  display: block;
+  text-decoration: none;
+}
+
+
+
+/* Gradient border and glowing effect for the card */
+.card {
+  position: relative;
+  width: 18rem;
+  height: 30rem;
+  margin: 30px;
+  background: #464646;
+  color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ff0000, #ffcc00, #00ff00, #00ccff, #ff00ff);
+  background-size: 400% 400%;
+  border-radius: 12px;
+  z-index: -1;
+  animation: gradientGlow 5s ease infinite;
+}
+
+@keyframes gradientGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glowing box shadow */
+.card:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7),
+              0 0 30px rgba(255, 204, 0, 0.7),
+              0 0 40px rgba(0, 255, 0, 0.7),
+              0 0 50px rgba(0, 204, 255, 0.7),
+              0 0 60px rgba(255, 0, 255, 0.7);
+  transition: 0.5s;
+}

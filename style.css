@@ -1,0 +1,140 @@
+/* Style for the overall background */
+body {
+  background: #404040;
+}
+
+/* Style for the navigation bar */
+#nav {
+  background: #fff;
+}
+
+/* Style for the container background */
+.container-fluid {
+  background: #252525;
+}
+
+/* Style for the navbar brand text */
+.navbar-brand {
+  color: #fff !important;
+}
+
+/* Style for the navbar toggler */
+.navbar-toggler {
+  color: #fff;
+}
+
+/* Style for the navigation items */
+.nav-item a {
+  color: #fff;
+}
+
+/* Style for the dropdown items */
+.dropdown a {
+  color: #fff;
+}
+
+/* Additional hover effects */
+.nav-item a:hover,
+.dropdown a:hover {
+  color: #ddd;
+}
+
+/* Style for the cards */
+.card {
+  width: 18rem; /* Fixed width for all cards */
+  height: 30rem; /* Fixed height for all cards */
+  margin: 30px;
+  background: #464646;
+  color: #fff;
+  transition: all 0.8s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the card text */
+.card-text {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Style for the card image to fit the card size */
+.card-img-top {
+  width: 100%;
+  height: 60%;
+  object-fit: cover; /* Ensures the image covers the space nicely */
+}
+
+/* Style for the card body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Style for the buttons inside cards */
+.card-body button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #252525;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-body button:hover {
+  background-color: #ddd;
+  transform: translateY(-3px);
+}
+
+/* Hover effect for the cards */
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Style for the content container */
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Anchor tag wrapping each card */
+#content a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Gradient border and glowing effect for the card */
+.card {
+  position: relative;
+  width: 18rem;
+  height: 30rem;
+  margin: 30px;
+  background: #353535;
+  color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Border with gradient and glowing effect */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 400% 400%;
+  z-index: -1;
+  border-radius: 12px;
+  padding: 2px; /* Creates the "border" effect */
+  transition: all 1s ease-in-out; /* Smooth transition on hover */
+}
